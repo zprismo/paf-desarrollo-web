@@ -4,6 +4,8 @@ $(document).ready(function () {
     var totalSlides = slides.length;
     var slidesToShow = 4;
 
+    let click = false;
+
     $('.clientes-next').on('click', function () {
         if (currentIndex < totalSlides - slidesToShow) {
             currentIndex++;
@@ -11,6 +13,7 @@ $(document).ready(function () {
             currentIndex = 0;
         }
         updateSlider();
+        click = true;
     });
 
     $('.clientes-prev').on('click', function () {
@@ -20,6 +23,7 @@ $(document).ready(function () {
             currentIndex = totalSlides - slidesToShow;
         }
         updateSlider();
+        click = true;
     });
 
     function updateSlider() {
@@ -27,13 +31,15 @@ $(document).ready(function () {
         $('.clientes-slider-wrapper').css('transform', 'translateX(' + translateValue + ')');
     }
 
-    // Agregar el siguiente código para el bucle infinito
+
     setInterval(function () {
-        if (currentIndex < totalSlides - slidesToShow) {
-            currentIndex++;
-        } else {
-            currentIndex = 0;
+        if(!click) {
+            if (currentIndex < totalSlides - slidesToShow) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
         }
         updateSlider();
-    }, 3000); // Ajusta el intervalo de cambio según sea necesario (en milisegundos)
+    }, 2000);
 });

@@ -128,7 +128,7 @@ html {
 
 .progress-bar {
     height: 8px;
-    background: linear-gradient(90deg, rgba(4,79,115,1) 0%, rgba(16,94,186,1) 25%, rgba(89,227,255,1) 100%);
+    background: linear-gradient(90deg, rgba(4,79,115,1) 0%, rgba(16,94,186,1) 25%, rgb(89, 227, 255) 100%);
     width: 0;
     position: absolute;
     bottom: 0;
@@ -154,6 +154,7 @@ html {
 .clientes-slider-container {
     position: relative;
     width: 80%;
+    height: 200px;
     margin: 50px auto;
     overflow: hidden;
 }
@@ -161,6 +162,7 @@ html {
 .clientes-slider-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    height: 100%;
 }
 
 .clientes-slide {
@@ -168,23 +170,84 @@ html {
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
-    background-color: #ddd;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 120px;
+    background-repeat: no-repeat;
+
 }
 
-button {
+.clientes-slide img {
+    width: 65%;
+}
+
+.btn-clientes {
     border: none;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 .clientes-prev {
-    left: 10px;
+    left: 0;
 }
 
 .clientes-next {
-    right: 10px;
+    right: 0;
 }
+
+
+
+.records-container {
+    padding: 48px 0;
+    display: flex;
+}
+
+.records-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.records-container img {
+    width: 700px;
+}
+
+
+.records-data .data-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4e90de;
+}
+
+.records-data .data-number {
+    font-size: 80px;
+    font-weight: 800;
+    color: #8c8c8c;
+    line-height: 85px;
+}
+
+.records-data .data-separator {
+    padding: 3px 0;
+    width: 65px;
+    background-color: #3886e1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
