@@ -20,6 +20,7 @@ html {
 
 .container {
     width: 60%;
+    border: 2px solid red;
 }
 
 .info-top {
@@ -59,6 +60,8 @@ html {
 
 .clientes-container {
     padding: 48px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -66,7 +69,7 @@ html {
 
 .slider-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     max-height: 80vh;
     margin: auto;
@@ -74,7 +77,6 @@ html {
 }
 
 .slider-wrapper {
-    width: auto;
     height: 100%;
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -143,4 +145,46 @@ html {
 .xd.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+
+
+
+.clientes-slider-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.clientes-slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.clientes-slide {
+    flex: 0 0 25%; /* 25% de ancho para mostrar 4 slides al mismo tiempo */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+button {
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.clientes-prev {
+    left: 10px;
+}
+
+.clientes-next {
+    right: 10px;
 }
