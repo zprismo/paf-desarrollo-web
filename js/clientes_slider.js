@@ -5,7 +5,7 @@ $(document).ready(function () {
     // var slidesToShow = $(window).width() === 390 ? 1 : 4;
 
     function calcularSlidesToShow() {
-        return $(window).width() <= 390 ? 1 : 4;
+        return $(window).width() <= 768 ? 1 : 4;
     }
 
     var slidesToShow = calcularSlidesToShow();

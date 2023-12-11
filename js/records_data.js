@@ -37,7 +37,7 @@ $(document).ready(function() {
     }
 
     $(window).on('scroll', function() {
-        // Verificar si el elemento es visible en la ventana
+
         var contadorElement = $('#contadorPaises');
         var elementTop = contadorElement.offset().top;
         var elementBottom = elementTop + contadorElement.outerHeight();

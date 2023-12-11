@@ -327,7 +327,7 @@ footer .row-bottom p {
 }
 
 .records-wrapper img {
-    width: 700px;
+    width: 60%;
 }
 
 .records-data {
@@ -415,7 +415,7 @@ footer .row-bottom p {
     width: 100%;
     height: auto;
     padding: 80px 0;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
 .quienes-somos-wrapper {
@@ -559,6 +559,7 @@ footer .row-bottom p {
 .politicas-box {
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .politicas-card {
@@ -770,7 +771,7 @@ footer .row-bottom p {
 }
 
 .map-content {
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     width: 560px;
 }
 
@@ -780,11 +781,16 @@ footer .row-bottom p {
     height: 380px
 }
 
-
+@media screen and (max-width: 389px) {
+    .records-graphic {
+        width: 80px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 340px;
+        /*width: 340px;*/
+        width: 90%;
     }
 
     .menu-btn {
@@ -919,12 +925,21 @@ footer .row-bottom p {
         display: none;
     }
 
+    .records-wrapper img {
+        width: 80%;
+    }
+
+    .records-graphic {
+        width: 100%;
+    }
+
     .contacto-container {
         padding: 45px 0;
     }
 
     .contacto-wrapper {
         gap: 45px;
+        justify-content: center;
     }
 
     .contacto-card {
@@ -954,6 +969,11 @@ footer .row-bottom p {
 
     .quienes-somos-wrapper {
         gap: 30px;
+        /*border: 2px solid red;*/
+    }
+
+    .quienes-somos-content {
+        width: 100%;
     }
 
     .quienes-somos-figure {
@@ -984,7 +1004,7 @@ footer .row-bottom p {
     }
 
     .politicas-wrapper {
-        width: 340px;
+        width: 90%;
     }
 
     .politicas-titulo h2 {
@@ -1038,6 +1058,10 @@ footer .row-bottom p {
         color: #FFFFFF;
     }
 
+    .formulario-content {
+        width: 100%;
+    }
+
     .map-content {
         width: 100%;
     }
@@ -1063,16 +1087,29 @@ footer .row-bottom p {
     .records-wrapper {
         flex-wrap: wrap;
         gap: 50px;
+        /*border: 2px solid red;*/
+        justify-content: center;
     }
 
     .records-data {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        /*border: 2px solid red;*/
     }
 
     .records-data-content .data-number {
         font-size: 60px;
+    }
+
+    .records-wrapper img {
+        width: 80%;
+        justify-self: center;
+    }
+
+    .records-graphic {
+        /*border: 2px solid red;*/
+        text-align: center;
     }
 
     .contacto-card {
@@ -1082,11 +1119,31 @@ footer .row-bottom p {
     }
 
     footer .row-bottom {
-        height: 100px;
+        gap: 20px;
+        height: 150px;
     }
 
     footer .row-bottom > div {
         justify-content: center;
+        flex-direction: column;
+        border: 2px solid white;
+        gap: 5px;
+    }
+
+    footer .row-bottom > div > div {
+        flex-direction: column;
+        gap: 20px;
+        border: 2px solid red;
+    }
+
+    .conocenos-portada-container {
+        width: 100%;
+        height: 40vh;
+        max-height: 40vh;
+    }
+
+    .conocenos-portada-container h1 {
+        font-size: 60px;
     }
 
     .quienes-somos-wrapper {
@@ -1098,11 +1155,90 @@ footer .row-bottom p {
         align-items: center;
         width: 100%;
     }
+
+    .valores-header-wrapper {
+        /*border: 2px solid blue;*/
+        height: 150px;
+    }
+
+    .politicas-wrapper {
+        width: 70%;
+    }
+
+    .soluciones-portada-container {
+        width: 100%;
+        height: 40vh;
+        max-height: 40vh;
+    }
+
+    .soluciones-portada-container h1 {
+        font-size: 60px;
+    }
+
+    .saas-header {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .saas-header-title h2 {
+        font-size: 45px;
+    }
+
+    .saas-article {
+        /*border: 2px solid red;*/
+        gap: 20px;
+    }
+
+    .saas-article-content {
+        /*border: 2px solid blue;*/
+        width: 300px;
+    }
+
+    .saas-article img {
+        /*border: 2px solid red;*/
+    }
+
+    .saas-content-card {
+        gap: 80px 0;
+    }
+
+    .formulario-content {
+        width: 100%;
+    }
+
+    .map-content {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .container {
-        width: 970px;
+        /*width: 970px;*/
+        width: 90%;
+    }
+
+    .records-graphic {
+        height: 330px;
+    }
+
+    .contacto-card {
+        width: 290px;
+    }
+
+    .quienes-somos-content {
+        width: 45%;
+    }
+
+    .quienes-somos-figure {
+        width: 45%;
+    }
+
+    .formulario-content {
+        width: 45%;
+    }
+
+    .map-content {
+        width: 45%;
     }
 }
 
