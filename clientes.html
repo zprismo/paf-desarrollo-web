@@ -5,12 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contacto - Innovahtec</title>
+    <title>Conocenos - Innovahtec</title>
     <link rel="stylesheet" href="css/style-new.css">
     <link rel="stylesheet"
           href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/header_fixed.js"></script>
+    <script src="js/clientes_slider.js"></script>
     <script src="js/hamburger_menu.js"></script>
 </head>
 <body>
@@ -39,55 +40,38 @@
     </div>
 </header>
 <main>
-    <div class="contactanos-container flex flex-center">
+    <div class="nuestros-clientes-container flex flex-center">
         <div class="container flex flex-center">
-            <h2>Contáctanos</h2>
+            <h2>Nuestros <span>Clientes</span></h2>
         </div>
     </div>
-    <div class="formulario-container flex flex-center">
-        <div class="container flex flex-center">
-            <div class="formulario-wrapper flex flex-space-between">
-                <div class="formulario-content flex-column">
-                    <h3>Envíanos tu Mensaje</h3>
-                    <form class="flex flex-center flex-column" action="">
-                        <input type="text" placeholder="Nombre">
-                        <input type="email" placeholder="Email">
-                        <input type="text" placeholder="Telefono">
-                        <textarea placeholder="Mensaje"></textarea>
-                        <a href="">ENVIAR</a>
-                    </form>
+    <div class="clientes-container flex flex-column flex-center">
+        <div class="container clientes-slider-container">
+            <div class="clientes-slider-wrapper">
+                <div class="clientes-slide">
+                    <img src="img/cliente_agrovision.png" alt="">
                 </div>
-                <div class="map-content flex flex-center">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.5003924052177!2d-79.77116453257858!3d-6.715811768761837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1702187671156!5m2!1ses-419!2spe"
-                            allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="clientes-slide">
+                    <img src="img/cliente_agrovision.png" alt="">
+                </div>
+                <div class="clientes-slide">
+                    <img src="img/cliente_agrovision.png" alt="">
+                </div>
+                <div class="clientes-slide">
+                    <img src="img/cliente_agrovision.png" alt="">
+                </div>
+                <div class="clientes-slide">
+                    <img src="img/cliente_agrovision.png" alt="">
+                </div>
+                <div class="clientes-slide">
+                    <img src="img/cliente_agrovision.png" alt="">
+                </div>
+                <div class="clientes-slide">
+                    <img src="img/cliente_agrovision.png" alt="">
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="contacto-container flex flex-center">
-        <div class="contacto-wrapper container flex flex-space-between">
-            <article class="contacto-card flex flex-center">
-                <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/90/0c68d5/order-delivered.png" alt="order-delivered"/>
-                <div class="text flex-column">
-                    <p>Oficina Trujillo</p>
-                    <p>Av. Teodoro Valcárcel #777 4to Piso, Urb. Primavera - Trujillo, Perú</p>
-                </div>
-            </article>
-            <article class="contacto-card flex flex-center">
-                <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/70/0c68d5/phone-message.png" alt="phone-message"/>
-                <div class="text flex-column">
-                    <p>Teléfono</p>
-                    <p>(+51) 982 585 743</p>
-                </div>
-            </article>
-            <article class="contacto-card flex flex-center">
-                <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/70/0c68d5/secured-letter--v1.png" alt="secured-letter--v1"/>
-                <div class="text flex-column">
-                    <p>Email</p>
-                    <p>informes@yawi.pe</p>
-                </div>
-            </article>
+            <img class="clientes-prev btn-clientes" width="40" height="40" src="https://img.icons8.com/ios-glyphs/90/43AABE/circled-chevron-left.png" alt="circled-chevron-right"/>
+            <img class="clientes-next btn-clientes" width="40" height="40" src="https://img.icons8.com/ios-glyphs/90/43AABE/circled-chevron-right.png" alt="circled-chevron-right"/>
         </div>
     </div>
 </main>

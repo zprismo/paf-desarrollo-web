@@ -2,7 +2,13 @@ $(document).ready(function () {
     var currentIndex = 0;
     var slides = $('.clientes-slide');
     var totalSlides = slides.length;
-    var slidesToShow = 4;
+    // var slidesToShow = $(window).width() === 390 ? 1 : 4;
+
+    function calcularSlidesToShow() {
+        return $(window).width() <= 390 ? 1 : 4;
+    }
+
+    var slidesToShow = calcularSlidesToShow();
 
     let click = false;
 
@@ -31,6 +37,14 @@ $(document).ready(function () {
         $('.clientes-slider-wrapper').css('transform', 'translateX(' + translateValue + ')');
     }
 
+    $(window).on('resize', function () {
+        // Actualizar slidesToShow solo si ha cambiado
+        var newSlidesToShow = calcularSlidesToShow();
+        if (newSlidesToShow !== slidesToShow) {
+            slidesToShow = newSlidesToShow;
+            updateSlider();
+        }
+    });
 
     setInterval(function () {
         if(!click) {

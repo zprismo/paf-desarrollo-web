@@ -2,11 +2,11 @@ $(document).ready(function () {
     let currentIndex = 0;
     let slides = $('.slide');
     let totalSlides = slides.length;
-    let progressBar = $('.progress-bar');
+    let progressBar = $('.slider-progress-bar');
     let intervalDuration = 5000;
     let interval;
 
-    $('.next').on('click', function () {
+    $('.next-slider').on('click', function () {
         clearInterval(interval);
         if (currentIndex < totalSlides - 1) {
             currentIndex++;
@@ -17,7 +17,7 @@ $(document).ready(function () {
         startProgressBar();
     });
 
-    $('.prev').on('click', function () {
+    $('.prev-slider').on('click', function () {
         clearInterval(interval);
         if (currentIndex > 0) {
             currentIndex--;
@@ -33,10 +33,10 @@ $(document).ready(function () {
         $('.slider-wrapper').css('transform', 'translateX(' + translateValue + ')');
 
         setTimeout(function () {
-            $('.xd').eq(currentIndex).addClass('show');
+            $('.aux').eq(currentIndex).addClass('show');
         }, 500);
 
-        $('.xd').not(':eq(' + currentIndex + ')').removeClass('show');
+        $('.aux').not(':eq(' + currentIndex + ')').removeClass('show');
     }
 
     function startProgressBar() {
@@ -65,6 +65,6 @@ $(document).ready(function () {
         updateSlider();
     }
 
-    $('.xd').eq(currentIndex).addClass('show');
+    $('.aux').eq(currentIndex).addClass('show');
     startProgressBar();
 });

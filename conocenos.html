@@ -6,84 +6,94 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Conocenos - Innovahtec</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/style-new.css">
+    <link rel="stylesheet"
+          href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/header_fixed.js"></script>
+    <script src="js/hamburger_menu.js"></script>
 </head>
 <body>
-<div class="info-top flex-center">
-    <div class="container flex-center" style="justify-content: flex-end; !important;">
-        <a href="">iN</a>
+<div class="info-top flex flex-center">
+    <div class="container flex flex-end">
+        <a href=""><i class="lab la-linkedin-in" style="color: white; font-size: 25px"></i></a>
     </div>
 </div>
-<header class="header flex-center">
-    <div class="container flex-center" style="justify-content: space-between; !important;">
+<header class="flex flex-center">
+    <div class="nav container flex flex-space-between">
         <div>
             <h2>Innovahtec</h2>
         </div>
-        <div>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Conocenos</a></li>
-                <li><a href="">Soluciones</a></li>
-                <li><a href="">Clientes</a></li>
-                <li><a href="">Contáctanos</a></li>
+        <div class="menu">
+            <ul class="flex flex-center">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="soluciones.html">Soluciones</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
             </ul>
+        </div>
+        <div class="menu-btn" id="btn-menu">
+            <i class="las la-2x la-bars" style="color: black"></i>
         </div>
     </div>
 </header>
 <main>
-    <div class="conocenos-portada-container"
-         style="background-image: linear-gradient(300deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.35) 20%), url('img/conocenos.webp'); background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center">
-        <h1 style="color: #fff; font-weight: 700; font-size: 120px;">Conocenos</h1>
+    <div class="conocenos-portada-container flex flex-center"
+         style="background-image: linear-gradient(300deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.35) 20%), url('img/conocenos.webp');">
+        <h1>Conócenos</h1>
     </div>
-    <div class="quienes-somos-container flex-center">
-        <div class="container flex-center" style="">
+    <div class="quienes-somos-container flex flex-center">
+        <div class="container flex flex-center">
             <div class="quienes-somos-wrapper">
-                <div style="display: flex; flex-direction: column; gap: 20px; width: 50%">
-                    <h3 style="font-size: 50px; line-height: 50px; color: #0c68d5; font-weight: 500"><span style="font-weight: 700">QUIÉNES</span> SOMOS</h3>
-                    <p style="font-size: 16px; line-height: 24px; font-weight: bold; color: #0c68d5">Somos especialistas brindando soluciones tecnológicas para el soporte y control eficiente de la
+                <div class="quienes-somos-content flex flex-column">
+                    <h3>QUIÉNES <span>SOMOS</span></h3>
+                    <p class="subtitle">Somos especialistas
+                        brindando soluciones tecnológicas para el soporte y control eficiente de la
                         operación agrícola.</p>
-                    <p style="color: #6e6e6e; font-size: 16px; line-height: 24px">Mediante las modalidades de SaaS (Software como Servicio), aportamos soluciones para el control
+                    <p>Mediante las modalidades de SaaS
+                        (Software como Servicio), aportamos soluciones para el control
                         de tu negocio con información en tiempo real para la toma de decisiones y mejora continua.</p>
-                    <p style="color: #6e6e6e; font-size: 16px; line-height: 24px">Nuestras soluciones se implementan considerando estrategias de optimización de procesos
+                    <p>Nuestras soluciones se implementan
+                        considerando estrategias de optimización de procesos
                         operativos, buscando reducir la complejidad y los tiempos ineficientes para un manejo adecuado
                         de operaciones en cualquier zona geográfica.</p>
                 </div>
-                <div class="" style="width: 50%; display: flex; justify-content: center; align-items: center;">
+                <div class="quienes-somos-figure flex flex-center">
                     <img class="" src="img/quienes-somos.jpg" alt="">
                 </div>
-
             </div>
         </div>
     </div>
-    <div class="valores-container flex-center">
-        <div class="valores-header-wrapper" style="background-image: url('img/wave.svg'); background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; width: 100%; height: 260px;">
-            <div class="container flex-center">
-                <h2 style="font-size: 60px; color: #ffffff; font-weight: 700">Valores</h2>
+    <div class="valores-container flex flex-center flex-column">
+        <div class="valores-header-wrapper flex flex-center" style="background-image: url('img/wave.svg');">
+            <div class="container flex flex-center">
+                <h2>Valores</h2>
             </div>
         </div>
-        <div class="container flex-center">
-            <div class="valores-content-wrapper">
-                <div class="row">
-                    <article class="valores-card">
+        <div class="container flex flex-center">
+            <div class="valores-content-wrapper flex-column">
+                <div class="row flex">
+                    <article class="valores-card flex flex-center flex-column">
                         <i class="lar la-7x la-thumbs-up" style="color: #858585;"></i>
                         <p style="font-size: 18px; font-weight: bolder; color: #858585; ">Alta calidad</p>
                     </article>
-                    <article class="valores-card">
+                    <article class="valores-card flex flex-center flex-column">
                         <i class="las la-7x la-lightbulb" style="color: #858585;"></i>
                         <p style="font-size: 18px; font-weight: bolder; color: #858585; ">Innovación</p>
                     </article>
-                    <article class="valores-card">
+                    <article class="valores-card flex flex-center flex-column">
                         <i class="las la-7x la-brain" style="color: #858585;"></i>
-                        <p style="font-size: 18px; font-weight: bolder; color: #858585; ">Desarrollo ágil de proyectos</p>
+                        <p style="font-size: 18px; font-weight: bolder; color: #858585; ">Desarrollo ágil de
+                            proyectos</p>
                     </article>
                 </div>
-                <div class="row">
-                    <article class="valores-card">
+                <div class="row flex">
+                    <article class="valores-card flex flex-center flex-column">
                         <i class="las la-7x la-handshake" style="color: #858585;"></i>
                         <p style="font-size: 18px; font-weight: bolder; color: #858585; ">Compromiso y colaboración</p>
                     </article>
-                    <article class="valores-card">
+                    <article class="valores-card flex flex-center flex-column">
                         <i class="las la-7x la-users-cog" style="color: #858585;"></i>
                         <p style="font-size: 18px; font-weight: bolder; color: #858585; ">Competencia y experiencia</p>
                     </article>
@@ -91,6 +101,108 @@
             </div>
         </div>
     </div>
+    <div class="politicas-container flex flex-center flex-column">
+        <div class="politicas-wrapper flex-column">
+            <div class="politicas-header flex flex-center">
+                <i class="las la-10x la-user-shield" style="color: #0c68d5"></i>
+                <div class="politicas-titulo flex-column">
+                    <h2>Política de calidad</h2>
+                    <h2><span>y certificaciones</span></h2>
+                </div>
+            </div>
+            <div class="politicas-content flex flex-center flex-column">
+                <p>YAWI, empresa dedicada al servicio de
+                    desarrollo de tecnología para el soporte de la operación
+                    agrícola, tiene como visión ser una empresa lider de soluciones tecnológicas en el rubro y
+                    expandirse a mercados internacionales. Como parte de su desarrollo y dirección estratégica.</p>
+                <p>
+                    Cumplir los requisitos de los clientes, partes interesadas, legales y demás requisitos aplicables al
+                    rubro de la organización, generando una cultura de calidad mediante el fortalecimiento del talento
+                    humano.
+                </p>
+                <p>
+                    Brindar servicios tecnológicos que cumplan las especificaciones técnicas de calidad y el logro de
+                    las necesidades y expectativas del usuario, garantizando su satisfacción.
+                </p>
+                <p>
+                    Promover la mejora continua del sistema de gestión de la calidad mediante la evaluación del
+                    desempeño y generación de oportunidades de mejora a través de todos los procesos.
+                </p>
+                <p>
+                    <span>Esta política servirá como marco de referencia para el establecimiento de los objetivos de la
+                    calidad y será difundida, comunicada y entendida a los colaboradores y a las partes interesadas.</span>
+                </p>
+                <p>
+                    El alcance del Sistema de Gestión de Calidad de Yapu Solutions S.A.C., ubicada en Av. Teodoro
+                    Valcárcel #777 4to Piso, Urb. Primavera - Trujillo, Perú; comprende los Procesos de Preparación,
+                    Implementación y Soporte Post Venta de soluciones tecnológicas. El único requisito de la norma
+                    internacional ISO 9001:2015 que no aplica al Sistema de Gestión de la Calidad de nuestra
+                    organización es: 7.1.5.2. Trazabilidad de las mediciones: En la organización no se realiza
+                    calibraciones, comprobaciones ni verificaciones, ya que no contamos con equipos de seguimiento y
+                    medición.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="politicas-container flex flex-center flex-column">
+        <div class="politicas-wrapper flex-column">
+            <div class="politicas-header flex flex-center">
+                <i class="las la-10x la-server" style="color: #0c68d5"></i>
+                <div class="politicas-titulo flex-column">
+                    <h2>Política de Seguridad</h2>
+                    <h2><span>de la Información</span></h2>
+                </div>
+            </div>
+            <div class="politicas-content flex flex-center flex-column">
+                <p>
+                    Yawi establece el Sistema de Gestión de Seguridad de la Información (SGSI) compuesto por un conjunto
+                    de políticas, directrices, procedimientos y prácticas, que a través de su establecimiento,
+                    seguimiento, control y mejora continua se compromete a cumplir con los principios de la Seguridad de
+                    la Información:</p>
+                <div class="politicas-box flex flex-space-between">
+                    <article class="politicas-card flex flex-center flex-column">
+                        <i class="las la-6x la-check-circle" style="color: #0c68d5"></i>
+                        <h3>Integridad</h3>
+                        <p>Los activos de
+                            información deben
+                            estar adecuadamente protegidos para salvaguardar la
+                            exactitud y completitud.</p>
+                    </article>
+                    <article class="politicas-card flex flex-center flex-column">
+                        <i class="las la-6x la-check-circle" style="color: #0c68d5"></i>
+                        <h3>Confidencialidad</h3>
+                        <p>La información
+                            debe ser accesible
+                            sólo a aquellos que se encuentren debidamente autorizados.</p>
+                    </article>
+                    <article class="politicas-card flex flex-center flex-column">
+                        <i class="las la-6x la-check-circle" style="color: #0c68d5"></i>
+                        <h3>Disponibilidad</h3>
+                        <p>La información
+                            debe estar disponible en forma organizada para los usuarios autorizados cuando sea
+                            requerida.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+<footer class="flex flex-column flex-center">
+    <div class="row-top flex flex-center">
+        <div class="container flex flex-space-between">
+            <p>Innovahtec</p>
+            <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/FFFFFF/linkedin-circled--v1.png" alt="linkedin-circled--v1"/>
+        </div>
+    </div>
+    <div class="row-bottom flex flex-center">
+        <div class="container flex flex-space-between" style="flex-wrap: wrap">
+            <p>© Disenado por GRUPO 5 - FTW - USS | Copyright 2023</p>
+            <div class="flex flex-row" style="gap: 20px; flex-wrap: wrap">
+                <p>Politica de cookies</p>
+                <p>Politica de privacidad</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
